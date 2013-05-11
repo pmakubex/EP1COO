@@ -1,16 +1,19 @@
 class LinhaDeArquivo{
-  int numero;
+  	int numero;
 	String conteudo;
+	String nomeArq;
 	LinhaDeArquivo prox;
 	
-	public LinhaDeArquivo(int num, String cont){
+	public LinhaDeArquivo(int num, String cont, String nome){
 		this.numero = num;
 		this.conteudo = cont;
+		this.nomeArq = nome;
 	}
 
-	void setLinha(int num, String cont){
+	void setLinha(int num, String cont, String nome){
 		this.numero = num;
 		this.conteudo = cont;
+		this.nomeArq = nome;
 	}
 
 	boolean temProximo(){
